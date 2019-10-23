@@ -1,0 +1,10 @@
+C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabularyInstaller\bin\Debug\cab1.cab
+C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabularyInstaller\bin\Debug\CheckVocabularyInstaller.msi
+C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabularyInstaller\bin\Debug\CheckVocabularyInstaller.wixpdb
+obj\Debug\Product.wixobj
+obj\Debug\CheckVocabularyInstaller.wixproj.BindContentsFileListnull.txt
+obj\Debug\CheckVocabularyInstaller.wixproj.BindOutputsFileListnull.txt
+obj\Debug\CheckVocabularyInstaller.wixproj.BindBuiltOutputsFileListnull.txt
+obj\Debug\CsokaSetupDialog.wixobj
+obj\Debug\teszt.wixobj
+obj\Debug\teszt2.wixobj

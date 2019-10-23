@@ -1,0 +1,9 @@
+C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabulary\bin\Debug\CheckVocabulary.exe.config
+C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabulary\bin\Debug\CheckVocabulary.exe
+C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabulary\bin\Debug\CheckVocabulary.pdb
+C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabulary.Form1.resources
+C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabulary.Properties.Resources.resources
+C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabulary.csproj.GenerateResource.cache
+C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabulary.exe
+C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabulary.pdb
+C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabulary.csprojAssemblyReference.cache
