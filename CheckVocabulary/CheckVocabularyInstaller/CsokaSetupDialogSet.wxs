@@ -5,7 +5,7 @@
     
     <!--<Property Id="INSTALLDIR" Value="honnanTudja" />-->
     
-    <Binary Id="RegKeyHandlerBinary" src="C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\CheckVocabularyCustomAction.CA.dll" />
+    <Binary Id="RegKeyHandlerBinary" src= "$(var.CheckVocabularyCustomAction.TargetDir)CheckVocabularyCustomAction.CA.dll" />
     <CustomAction Id="RegKeyHandlerCall"
              Return="check"
              Execute="immediate"

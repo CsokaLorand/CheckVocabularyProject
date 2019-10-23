@@ -1,4 +1,4 @@
-C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabulary\bin\Debug\CheckVocabulary.exe
-C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabulary\bin\Debug\CheckVocabulary.exe.config
-C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\CheckVocabularyCustomAction.dll
-C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\Microsoft.Deployment.WindowsInstaller.dll
+C:\Dev\MyProject\CheckVocabulary\CheckVocabulary\bin\Debug\CheckVocabulary.exe
+C:\Dev\MyProject\CheckVocabulary\CheckVocabulary\bin\Debug\CheckVocabulary.exe.config
+C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\CheckVocabularyCustomAction.dll
+C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\Microsoft.Deployment.WindowsInstaller.dll

@@ -7,3 +7,11 @@ C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVoc
 C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabulary.exe
 C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabulary.pdb
 C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabulary.csprojAssemblyReference.cache
+C:\Dev\MyProject\CheckVocabulary\CheckVocabulary\bin\Debug\CheckVocabulary.exe.config
+C:\Dev\MyProject\CheckVocabulary\CheckVocabulary\bin\Debug\CheckVocabulary.exe
+C:\Dev\MyProject\CheckVocabulary\CheckVocabulary\bin\Debug\CheckVocabulary.pdb
+C:\Dev\MyProject\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabulary.Form1.resources
+C:\Dev\MyProject\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabulary.Properties.Resources.resources
+C:\Dev\MyProject\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabulary.csproj.GenerateResource.cache
+C:\Dev\MyProject\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabulary.exe
+C:\Dev\MyProject\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabulary.pdb

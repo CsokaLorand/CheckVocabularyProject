@@ -7,3 +7,11 @@ C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabularyCustomAction\obj\x8
 C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabularyCustomAction\obj\x86\Debug\CheckVocabularyCustomAction.dll
 C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabularyCustomAction\obj\x86\Debug\CheckVocabularyCustomAction.pdb
 C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabularyCustomAction\obj\x86\Debug\CheckVocabularyCustomAction.csprojAssemblyReference.cache
+C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\CheckVocabularyCustomAction.dll
+C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\CheckVocabularyCustomAction.CA.dll
+C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\CheckVocabularyCustomAction.pdb
+C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\Microsoft.Deployment.WindowsInstaller.dll
+C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\Microsoft.Deployment.WindowsInstaller.xml
+C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\obj\x86\Debug\CheckVocabularyCustomAction.csproj.CopyComplete
+C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\obj\x86\Debug\CheckVocabularyCustomAction.dll
+C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\obj\x86\Debug\CheckVocabularyCustomAction.pdb
