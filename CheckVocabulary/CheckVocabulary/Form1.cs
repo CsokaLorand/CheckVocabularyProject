@@ -13,49 +13,71 @@ namespace CheckVocabulary
 {
     public partial class Form1 : Form
     {
+        const int checkLevel = 5;
+        private DateTime latestCheckTime = DateTime.MaxValue;
         readonly InputData inputData = new InputData();
         readonly Random randomNumber = new Random();
 
-        private void SelectWords()
+        private List<WordPair> OldestWordPairs(List<WordPair> allWordPair, int wordPairNeeded)
         {
-            int indexOfWordPair1 = randomNumber.Next(0, inputData.WordPairs.Count);
-            hungarianWordTextBox1.Text = inputData.WordPairs.ElementAt(indexOfWordPair1).HungarianWord;
+            List<WordPair> returnList = new List<WordPair>();
 
-            int indexOfWordPair2 = randomNumber.Next(0, inputData.WordPairs.Count);
-            while (indexOfWordPair2 == indexOfWordPair1)
-            {
-                indexOfWordPair2 = randomNumber.Next(0, inputData.WordPairs.Count);
-            }
-            hungarianWordTextBox2.Text = inputData.WordPairs.ElementAt(indexOfWordPair2).HungarianWord;
+            List<WordPair> wordPairsCopy = new List<WordPair>(allWordPair);
+            int neededWordPairNumber = wordPairNeeded;
 
-            int indexOfWordPair3 = randomNumber.Next(0, inputData.WordPairs.Count);
-            while (indexOfWordPair3 == indexOfWordPair1 || indexOfWordPair3 == indexOfWordPair2)
-            {
-                indexOfWordPair2 = randomNumber.Next(0, inputData.WordPairs.Count);
-            }
-            hungarianWordTextBox3.Text = inputData.WordPairs.ElementAt(indexOfWordPair3).HungarianWord;
+            WordPair currentOldestWordPair = new WordPair("","");
 
-            int indexOfWordPair4 = randomNumber.Next(0, inputData.WordPairs.Count);
-            while (indexOfWordPair4 == indexOfWordPair1 || indexOfWordPair4 == indexOfWordPair2
-                    || indexOfWordPair4 == indexOfWordPair3)
+            while (returnList.Count < checkLevel)
             {
-                indexOfWordPair4 = randomNumber.Next(0, inputData.WordPairs.Count);
-            }
-            hungarianWordTextBox4.Text = inputData.WordPairs.ElementAt(indexOfWordPair4).HungarianWord;
+                for(int i = wordPairsCopy.Count - 1; i >= 0; i--)
+                {
+                    if (neededWordPairNumber > 0)
+                    {
+                        string asdweqweq = wordPairsCopy.ElementAt(i).EnglishWord;
+                        DateTime qweqweqrtssas = wordPairsCopy.ElementAt(i).CheckDate;
 
-            int indexOfWordPair5 = randomNumber.Next(0, inputData.WordPairs.Count);
-            while (indexOfWordPair5 == indexOfWordPair1 || indexOfWordPair5 == indexOfWordPair2
-                    || indexOfWordPair5 == indexOfWordPair3 || indexOfWordPair5 == indexOfWordPair4)
-            {
-                indexOfWordPair5 = randomNumber.Next(0, inputData.WordPairs.Count);
+                        if (wordPairsCopy.ElementAt(i).CheckDate <= latestCheckTime)
+                        {
+                            currentOldestWordPair = wordPairsCopy.ElementAt(i);
+                            latestCheckTime = currentOldestWordPair.CheckDate;
+                        }
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+
+                wordPairsCopy.Remove(currentOldestWordPair);
+                returnList.Add(currentOldestWordPair);
+                neededWordPairNumber--;
+                latestCheckTime = DateTime.MaxValue;
             }
-            hungarianWordTextBox5.Text = inputData.WordPairs.ElementAt(indexOfWordPair5).HungarianWord;
+
+            return returnList;
+        }
+
+        private void SetHungarianWordTextBoxes()
+        {
+            List<WordPair> oldestWordpairs = OldestWordPairs(inputData.WordPairs, checkLevel);
+
+            string ateszt1 = oldestWordpairs.ElementAt(0).HungarianWord;
+            string ateszt2 = oldestWordpairs.ElementAt(1).HungarianWord;
+            string ateszt3 = oldestWordpairs.ElementAt(2).HungarianWord;
+            string ateszt4 = oldestWordpairs.ElementAt(3).HungarianWord;
+            string ateszt5 = oldestWordpairs.ElementAt(4).HungarianWord;
+
+            hungarianWordTextBox1.Text = oldestWordpairs.ElementAt(0).HungarianWord;
+            hungarianWordTextBox2.Text = oldestWordpairs.ElementAt(1).HungarianWord;
+            hungarianWordTextBox3.Text = oldestWordpairs.ElementAt(2).HungarianWord;
+            hungarianWordTextBox4.Text = oldestWordpairs.ElementAt(3).HungarianWord;
+            hungarianWordTextBox5.Text = oldestWordpairs.ElementAt(4).HungarianWord;
         }
 
         public Form1()
         {
             InitializeComponent();
-            SelectWords();
+            SetHungarianWordTextBoxes();
         }
 
         private void Show_button1_clicked(object sender, EventArgs e)
@@ -186,7 +208,7 @@ namespace CheckVocabulary
 
         private void Next_button_clicked(object sender, EventArgs e)
         {
-            SelectWords();
+            SetHungarianWordTextBoxes();
             englishWordTextBox1.Text = "";
             englishWordTextBox2.Text = "";
             englishWordTextBox3.Text = "";

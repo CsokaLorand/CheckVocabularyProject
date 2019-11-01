@@ -17,15 +17,17 @@ namespace CheckVocabulary
 
         public InputData()
         {
-            //TODO: use the inputFileClass as a const
-            string fileContent = System.IO.File.ReadAllText("C:\\Users\\" + Environment.UserName + "\\Desktop\\vocabulary.txt");
+            string fileContent = System.IO.File.ReadAllText(new InputFile().inputFilePath);
             string[] collectedWordPairs = fileContent.Split(new[] { Environment.NewLine }, StringSplitOptions.None);
 
             WordPairs = new List<WordPair>();
             foreach (string currentWordPair in collectedWordPairs)
             {
                 string[] words = currentWordPair.Split(new[] { " - " }, StringSplitOptions.None);
-                WordPairs.Add(new WordPair(words[0], words[1]));
+                if (words.Length == 2)
+                {
+                    WordPairs.Add(new WordPair(words[0], words[1]));
+                }
             }
         }
     }

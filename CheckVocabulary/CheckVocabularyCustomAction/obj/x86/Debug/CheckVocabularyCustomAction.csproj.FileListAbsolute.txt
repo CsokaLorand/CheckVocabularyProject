@@ -15,3 +15,4 @@ C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\Microsoft
 C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\obj\x86\Debug\CheckVocabularyCustomAction.csproj.CopyComplete
 C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\obj\x86\Debug\CheckVocabularyCustomAction.dll
 C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\obj\x86\Debug\CheckVocabularyCustomAction.pdb
+C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\obj\x86\Debug\CheckVocabularyCustomAction.csprojAssemblyReference.cache

@@ -1,0 +1,4 @@
+C:\Dev\MyProject\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabularyGUI.csprojAssemblyReference.cache
+C:\Dev\MyProject\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabulary.Form1.resources
+C:\Dev\MyProject\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabularyGui.Properties.Resources.resources
+C:\Dev\MyProject\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabularyGUI.csproj.GenerateResource.cache

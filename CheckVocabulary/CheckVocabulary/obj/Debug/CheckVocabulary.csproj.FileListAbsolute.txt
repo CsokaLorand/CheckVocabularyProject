@@ -15,3 +15,4 @@ C:\Dev\MyProject\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabulary.Prope
 C:\Dev\MyProject\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabulary.csproj.GenerateResource.cache
 C:\Dev\MyProject\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabulary.exe
 C:\Dev\MyProject\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabulary.pdb
+C:\Dev\MyProject\CheckVocabulary\CheckVocabulary\obj\Debug\CheckVocabulary.csprojAssemblyReference.cache

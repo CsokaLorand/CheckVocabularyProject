@@ -19,5 +19,16 @@ namespace CheckVocabularyCustomAction
 
             return ActionResult.Success;
         }
+
+        [CustomAction]
+        public static ActionResult RegKeyCleanAction(Session session)
+        {
+            System.IO.File.Create(AppDomain.CurrentDomain.BaseDirectory + "Teszt.txt");
+
+            RegistryKey regKey = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\run", true);
+            regKey.DeleteValue("CsokaApp");
+
+            return ActionResult.Success;
+        }
     }
 }
