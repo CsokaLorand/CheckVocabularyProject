@@ -45,6 +45,16 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="CustomAction.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FireBaseHandler\FireBaseHandler.csproj">
+      <Project>{acb14841-bdca-4ac6-94ff-0fe80d5d1d6f}</Project>
+      <Name>FireBaseHandler</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\InputData\InputData.csproj">
+      <Project>{f3867606-51be-4839-998b-928cd60e3ed9}</Project>
+      <Name>InputData</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(WixCATargetsPath)" Condition=" '$(WixCATargetsPath)' != '' " />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.CA.targets" Condition=" '$(WixCATargetsPath)' == '' AND Exists('$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.CA.targets') " />

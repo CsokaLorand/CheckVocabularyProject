@@ -8,6 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Microsoft.Win32;
+using System.IO;
+using FireBaseHandler;
+using InputData;
+using System.Globalization;
+
+//include for storing popUpCounter settings property, which preserve the value after app exit
+using CheckVocabulary.Properties;
 
 namespace CheckVocabulary
 {
@@ -15,8 +22,9 @@ namespace CheckVocabulary
     {
         const int checkLevel = 5;
         private DateTime latestCheckTime = DateTime.MaxValue;
-        readonly InputData inputData = new InputData();
+        readonly InputData.InputData inputData = new InputData.InputData();
         readonly Random randomNumber = new Random();
+        FireBaseHandlerClass fireBaseHandler = new FireBaseHandlerClass();
 
         private List<WordPair> OldestWordPairs(List<WordPair> allWordPair, int wordPairNeeded)
         {
@@ -33,13 +41,16 @@ namespace CheckVocabulary
                 {
                     if (neededWordPairNumber > 0)
                     {
-                        string asdweqweq = wordPairsCopy.ElementAt(i).EnglishWord;
-                        DateTime qweqweqrtssas = wordPairsCopy.ElementAt(i).CheckDate;
+                        DateTime original = DateTime.Now;
+                        DateTime originalUtc = DateTime.UtcNow;
 
+                        string latestCheckTimeAsString = DateTime.Now.ToString("yy/MM/dd HH:mm:ss");
+
+                        int xxasas = 12112;
                         if (wordPairsCopy.ElementAt(i).CheckDate <= latestCheckTime)
                         {
                             currentOldestWordPair = wordPairsCopy.ElementAt(i);
-                            latestCheckTime = currentOldestWordPair.CheckDate;
+                            latestCheckTime = wordPairsCopy.ElementAt(i).CheckDate;
                         }
                     }
                     else
@@ -76,6 +87,18 @@ namespace CheckVocabulary
 
         public Form1()
         {
+            //set back popUpcounter to 0
+            Settings.Default["popUpCounter"] = 0;
+            Settings.Default.Save();
+
+            MessageBox.Show("debug now" + DateTime.Now.AddHours(2).AddHours(2));
+
+            if (Settings.Default.popUpCounter == 0)
+            {
+                Settings.Default["popUpCounter"] = Settings.Default.popUpCounter + 1;
+                Settings.Default.Save();
+            }
+
             InitializeComponent();
             SetHungarianWordTextBoxes();
         }
@@ -143,35 +166,35 @@ namespace CheckVocabulary
                     && (currentWordPair.EnglishWord == englishWordTextBox1.Text))
                 {
                     pictureBox1.Image = Properties.Resources.Ok_icon;
-                    currentWordPair.CheckDate = DateTime.Now;
+                    fireBaseHandler.updateFireBaseElement(inputData, currentWordPair.EnglishWord);
                 }
 
                 if ((currentWordPair.HungarianWord == hungarianWordTextBox2.Text)
                     && (currentWordPair.EnglishWord == englishWordTextBox2.Text))
                 {
                     pictureBox2.Image = Properties.Resources.Ok_icon;
-                    currentWordPair.CheckDate = DateTime.Now;
+                    fireBaseHandler.updateFireBaseElement(inputData, currentWordPair.EnglishWord);
                 }
 
                 if ((currentWordPair.HungarianWord == hungarianWordTextBox3.Text)
                     && (currentWordPair.EnglishWord == englishWordTextBox3.Text))
                 {
                     pictureBox3.Image = Properties.Resources.Ok_icon;
-                    currentWordPair.CheckDate = DateTime.Now;
+                    fireBaseHandler.updateFireBaseElement(inputData, currentWordPair.EnglishWord);
                 }
 
                 if ((currentWordPair.HungarianWord == hungarianWordTextBox4.Text)
                     && (currentWordPair.EnglishWord == englishWordTextBox4.Text))
                 {
                     pictureBox4.Image = Properties.Resources.Ok_icon;
-                    currentWordPair.CheckDate = DateTime.Now;
+                    fireBaseHandler.updateFireBaseElement(inputData, currentWordPair.EnglishWord);
                 }
 
                 if ((currentWordPair.HungarianWord == hungarianWordTextBox5.Text)
                     && (currentWordPair.EnglishWord == englishWordTextBox5.Text))
                 {
                     pictureBox5.Image = Properties.Resources.Ok_icon;
-                    currentWordPair.CheckDate = DateTime.Now;
+                    fireBaseHandler.updateFireBaseElement(inputData, currentWordPair.EnglishWord);
                 }
             }
 

@@ -1,0 +1,14 @@
+C:\Dev\MyProject\CheckVocabulary\FireBaseHandler\bin\Debug\FireBaseHandler.dll
+C:\Dev\MyProject\CheckVocabulary\FireBaseHandler\bin\Debug\FireBaseHandler.pdb
+C:\Dev\MyProject\CheckVocabulary\FireBaseHandler\bin\Debug\FireSharp.dll
+C:\Dev\MyProject\CheckVocabulary\FireBaseHandler\bin\Debug\FireSharp.Serialization.JsonNet.dll
+C:\Dev\MyProject\CheckVocabulary\FireBaseHandler\bin\Debug\InputData.dll
+C:\Dev\MyProject\CheckVocabulary\FireBaseHandler\bin\Debug\Newtonsoft.Json.dll
+C:\Dev\MyProject\CheckVocabulary\FireBaseHandler\bin\Debug\RestSharp.dll
+C:\Dev\MyProject\CheckVocabulary\FireBaseHandler\bin\Debug\InputData.pdb
+C:\Dev\MyProject\CheckVocabulary\FireBaseHandler\bin\Debug\Newtonsoft.Json.xml
+C:\Dev\MyProject\CheckVocabulary\FireBaseHandler\bin\Debug\RestSharp.xml
+C:\Dev\MyProject\CheckVocabulary\FireBaseHandler\obj\Debug\FireBaseHandler.csprojAssemblyReference.cache
+C:\Dev\MyProject\CheckVocabulary\FireBaseHandler\obj\Debug\FireBaseHandler.csproj.CopyComplete
+C:\Dev\MyProject\CheckVocabulary\FireBaseHandler\obj\Debug\FireBaseHandler.dll
+C:\Dev\MyProject\CheckVocabulary\FireBaseHandler\obj\Debug\FireBaseHandler.pdb

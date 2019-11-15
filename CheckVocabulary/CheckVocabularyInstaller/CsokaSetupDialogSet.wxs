@@ -5,18 +5,24 @@
     
     <!--<Property Id="INSTALLDIR" Value="honnanTudja" />-->
     
-    <Binary Id="RegKeyHandlerBinary" src= "$(var.CheckVocabularyCustomAction.TargetDir)CheckVocabularyCustomAction.CA.dll" />
+    <Binary Id="CustomActionBinary" src= "$(var.CheckVocabularyCustomAction.TargetDir)CheckVocabularyCustomAction.CA.dll" />
     <CustomAction Id="RegKeyHandlerCallSetup"
              Return="check"
              Execute="immediate"
-             BinaryKey="RegKeyHandlerBinary"
+             BinaryKey="CustomActionBinary"
              DllEntry="RegKeySetupAction" />
     
     <CustomAction Id="RegKeyHandlerCallClean"
              Return="check"
              Execute="immediate"
-             BinaryKey="RegKeyHandlerBinary"
+             BinaryKey="CustomActionBinary"
              DllEntry="RegKeyCleanAction" />
+
+    <CustomAction Id="UploadInitialValuesToFirebaseAction"
+         Return="check"
+         Execute="immediate"
+         BinaryKey="CustomActionBinary"
+         DllEntry="UploadInitialValuesToFirebaseAction" />
 
     <!--Clean the Reg Key with help of custom action-->
     <InstallExecuteSequence>
@@ -68,6 +74,8 @@
 
       <!--call the custom action, which sets the Reg Key-->
       <Publish Dialog="VerifyReadyDlg" Control="Install" Event="DoAction" Value="RegKeyHandlerCallSetup" Order="1">1</Publish>
+      <!--set up words from selected file to firebase-->
+      <Publish Dialog="VerifyReadyDlg" Control="Install" Event="DoAction" Value="UploadInitialValuesToFirebaseAction" Order="2">1</Publish>     
 
       <Publish Dialog="MaintenanceWelcomeDlg" Control="Next" Event="NewDialog" Value="MaintenanceTypeDlg">1</Publish>
 

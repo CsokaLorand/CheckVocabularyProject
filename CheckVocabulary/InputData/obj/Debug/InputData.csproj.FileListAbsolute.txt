@@ -1,0 +1,4 @@
+C:\Dev\MyProject\CheckVocabulary\InputData\bin\Debug\InputData.dll
+C:\Dev\MyProject\CheckVocabulary\InputData\bin\Debug\InputData.pdb
+C:\Dev\MyProject\CheckVocabulary\InputData\obj\Debug\InputData.dll
+C:\Dev\MyProject\CheckVocabulary\InputData\obj\Debug\InputData.pdb

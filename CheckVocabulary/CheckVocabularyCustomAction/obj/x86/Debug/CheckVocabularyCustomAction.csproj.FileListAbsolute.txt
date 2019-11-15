@@ -10,9 +10,16 @@ C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabularyCustomAction\obj\x8
 C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\CheckVocabularyCustomAction.dll
 C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\CheckVocabularyCustomAction.CA.dll
 C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\CheckVocabularyCustomAction.pdb
+C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\FireBaseHandler.dll
+C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\InputData.dll
 C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\Microsoft.Deployment.WindowsInstaller.dll
+C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\FireSharp.dll
+C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\RestSharp.dll
+C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\FireBaseHandler.pdb
+C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\InputData.pdb
 C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\Microsoft.Deployment.WindowsInstaller.xml
+C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\bin\Debug\RestSharp.xml
+C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\obj\x86\Debug\CheckVocabularyCustomAction.csprojAssemblyReference.cache
 C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\obj\x86\Debug\CheckVocabularyCustomAction.csproj.CopyComplete
 C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\obj\x86\Debug\CheckVocabularyCustomAction.dll
 C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\obj\x86\Debug\CheckVocabularyCustomAction.pdb
-C:\Dev\MyProject\CheckVocabulary\CheckVocabularyCustomAction\obj\x86\Debug\CheckVocabularyCustomAction.csprojAssemblyReference.cache

@@ -5,12 +5,20 @@ VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckVocabulary", "CheckVocabulary\CheckVocabulary.csproj", "{9068FFD5-1EC0-46AA-9BB7-51D78E6274CC}"
 	ProjectSection(ProjectDependencies) = postProject
+		{ACB14841-BDCA-4AC6-94FF-0FE80D5D1D6F} = {ACB14841-BDCA-4AC6-94FF-0FE80D5D1D6F}
 		{A71988E5-7634-4BA8-9730-4DDA188A1AFD} = {A71988E5-7634-4BA8-9730-4DDA188A1AFD}
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CheckVocabularyCustomAction", "CheckVocabularyCustomAction\CheckVocabularyCustomAction.csproj", "{A71988E5-7634-4BA8-9730-4DDA188A1AFD}"
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "CheckVocabularyInstaller", "CheckVocabularyInstaller\CheckVocabularyInstaller.wixproj", "{82DB42D4-47DB-4314-9375-70E2599F1829}"
+	ProjectSection(ProjectDependencies) = postProject
+		{ACB14841-BDCA-4AC6-94FF-0FE80D5D1D6F} = {ACB14841-BDCA-4AC6-94FF-0FE80D5D1D6F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FireBaseHandler", "FireBaseHandler\FireBaseHandler.csproj", "{ACB14841-BDCA-4AC6-94FF-0FE80D5D1D6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InputData", "InputData\InputData.csproj", "{F3867606-51BE-4839-998B-928CD60E3ED9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -42,6 +50,22 @@ Global
 		{82DB42D4-47DB-4314-9375-70E2599F1829}.Release|Any CPU.ActiveCfg = Release|x86
 		{82DB42D4-47DB-4314-9375-70E2599F1829}.Release|x86.ActiveCfg = Release|x86
 		{82DB42D4-47DB-4314-9375-70E2599F1829}.Release|x86.Build.0 = Release|x86
+		{ACB14841-BDCA-4AC6-94FF-0FE80D5D1D6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACB14841-BDCA-4AC6-94FF-0FE80D5D1D6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACB14841-BDCA-4AC6-94FF-0FE80D5D1D6F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ACB14841-BDCA-4AC6-94FF-0FE80D5D1D6F}.Debug|x86.Build.0 = Debug|Any CPU
+		{ACB14841-BDCA-4AC6-94FF-0FE80D5D1D6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACB14841-BDCA-4AC6-94FF-0FE80D5D1D6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACB14841-BDCA-4AC6-94FF-0FE80D5D1D6F}.Release|x86.ActiveCfg = Release|Any CPU
+		{ACB14841-BDCA-4AC6-94FF-0FE80D5D1D6F}.Release|x86.Build.0 = Release|Any CPU
+		{F3867606-51BE-4839-998B-928CD60E3ED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3867606-51BE-4839-998B-928CD60E3ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3867606-51BE-4839-998B-928CD60E3ED9}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F3867606-51BE-4839-998B-928CD60E3ED9}.Debug|x86.Build.0 = Debug|Any CPU
+		{F3867606-51BE-4839-998B-928CD60E3ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3867606-51BE-4839-998B-928CD60E3ED9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3867606-51BE-4839-998B-928CD60E3ED9}.Release|x86.ActiveCfg = Release|Any CPU
+		{F3867606-51BE-4839-998B-928CD60E3ED9}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

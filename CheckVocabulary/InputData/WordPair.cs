@@ -3,14 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Globalization;
 
-namespace CheckVocabulary
+namespace InputData
 {
-    class WordPair
+    public class WordPair
     {
         public string EnglishWord { get; set; }
         public string HungarianWord { get; set; }
+
+        //public string CheckDate { get; set; }
+
         public DateTime CheckDate { get; set; }
+
+        public WordPair()
+        {
+        }
 
         public WordPair(string englishWord, string hungarianWord)
         {

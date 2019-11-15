@@ -1,3 +1,2 @@
-C:\Dev\MyProject\CheckVocabulary\CheckVocabularyInstaller\bin\Debug\cab1.cab
 C:\Dev\MyProject\CheckVocabulary\CheckVocabularyInstaller\bin\Debug\CheckVocabularyInstaller.msi
 C:\Dev\MyProject\CheckVocabulary\CheckVocabularyInstaller\bin\Debug\CheckVocabularyInstaller.wixpdb

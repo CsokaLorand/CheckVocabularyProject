@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"><?define CheckVocabulary_TargetDir=$(var.CheckVocabulary.TargetDir)?><?define CheckVocabularyCustomAction_TargetDir=$(var.CheckVocabularyCustomAction.TargetDir)?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?define CheckVocabulary_TargetDir=$(var.CheckVocabulary.TargetDir)?>
+  <?define CheckVocabularyCustomAction_TargetDir=$(var.CheckVocabularyCustomAction.TargetDir)?>
+  <?define FireBaseHandler_TargetDir=$(var.FireBaseHandler.TargetDir)?>
+  <?define InputData_TargetDir=$(var.InputData.TargetDir)?>
+  <!--CAUTION! this defines are needed for relative paths, plus the dlls needs to be added to references-->
+  
 	<Product Id="*" Name="CheckVocabularyInstaller" Language="1033" Version="1.0.0.0" Manufacturer="Csoka" UpgradeCode="01a04bdf-a07a-4359-add0-c6b0f15264bb">
 		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
@@ -7,11 +13,17 @@
     <UIRef Id="CsokaSetupDialogSet" />
 
     <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
-		<MediaTemplate />
+    <Media Id="1" Cabinet="Cab1.cab" EmbedCab="yes" />
 
 		<Feature Id="ProductFeature" Title="CheckVocabularyInstaller" Level="1">
 			<ComponentGroupRef Id="ProductComponents" />
       <ComponentRef Id="CheckVocabularyShortcutDesktop" />
+      <ComponentRef Id="FireSharp.dll" />
+      <ComponentRef Id="FireSharp.Serialization.JsonNet.dll" />
+      <ComponentRef Id="Newtonsoft.Json.dll" />
+      <ComponentRef Id="RestSharp.dll" />
+      <ComponentRef Id="InputData.dll" />
+      <ComponentRef Id="FireBaseHandler.dll" />
 		</Feature>
 	</Product>
 
@@ -40,10 +52,6 @@
 
   <Fragment>
 		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
-			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
-			<!-- <Component Id="ProductComponent"> -->
-				<!-- TODO: Insert files, registry keys, and other resources here. -->
-			<!-- </Component> -->
 			<Component Id="CheckVocabulary.exe" Guid="e058abac-9f87-43a8-a914-e50a2fd966d8">
 			  <File Id="CheckVocabulary.exe" Name="CheckVocabulary.exe" Source="$(var.CheckVocabulary_TargetDir)CheckVocabulary.exe" />
 			</Component>
@@ -56,6 +64,26 @@
 			<Component Id="Microsoft.Deployment.WindowsInstaller.dll" Guid="c384abd1-7796-4613-807e-bde5be4bc55e">
 			  <File Id="Microsoft.Deployment.WindowsInstaller.dll" Name="Microsoft.Deployment.WindowsInstaller.dll" Source="$(var.CheckVocabularyCustomAction_TargetDir)Microsoft.Deployment.WindowsInstaller.dll" />
 			</Component>
-		</ComponentGroup>
+
+      <Component Id="FireSharp.dll" Guid="e8a81c3c-07c6-45f5-bf2f-80ed31c018bc">
+        <File Id="FireSharp.dll" Name="FireSharp.dll" Source="$(var.FireBaseHandler_TargetDir)FireSharp.dll" />
+      </Component>
+      <Component Id="FireSharp.Serialization.JsonNet.dll" Guid="71b30621-3587-4a0b-a7d9-7d71bbeda914">
+        <File Id="FireSharp.Serialization.JsonNet.dll" Name="FireSharp.Serialization.JsonNet.dll" Source="$(var.FireBaseHandler_TargetDir)FireSharp.Serialization.JsonNet.dll" KeyPath="yes" />
+      </Component>
+      
+      <Component Id="Newtonsoft.Json.dll" Guid="16a6f24b-7ecd-4d4f-8fdb-c21dbc317022">
+        <File Id="Newtonsoft.Json.dll" Name="Newtonsoft.Json.dll" Source="$(var.FireBaseHandler_TargetDir)Newtonsoft.Json.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="RestSharp.dll" Guid="0b13fb60-ea7c-4575-b1cd-83fd6b41d9d3">
+        <File Id="RestSharp.dll" Name="RestSharp.dll" Source="$(var.FireBaseHandler_TargetDir)RestSharp.dll" KeyPath="yes" />
+      </Component>
+      <Component Id="InputData.dll" Guid="d8141080-a8d7-4bd7-adce-4ae8303219e1">
+        <File Id="InputData.dll" Name="InputData.dll" Source="$(var.InputData_TargetDir)InputData.dll" KeyPath="yes" />       
+      </Component>
+      <Component Id="FireBaseHandler.dll" Guid="d7333cb0-819b-46a2-b8a8-6cecdec88099">
+        <File Id="FireBaseHandler.dll" Name="FireBaseHandler.dll" Source="$(var.FireBaseHandler_TargetDir)FireBaseHandler.dll" KeyPath="yes" />
+      </Component>
+    </ComponentGroup>
 	</Fragment>
 </Wix>

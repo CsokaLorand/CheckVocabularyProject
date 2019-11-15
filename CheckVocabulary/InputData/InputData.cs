@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CheckVocabulary
+namespace InputData
 {
     class InputFile
     {
         public string inputFilePath = "C:\\Users\\" + Environment.UserName + "\\Desktop\\vocabulary.txt";
     }
 
-    class InputData
+    public class InputData
     {
         public List<WordPair> WordPairs { get; private set; }
 
@@ -29,6 +29,8 @@ namespace CheckVocabulary
                     WordPairs.Add(new WordPair(words[0], words[1]));
                 }
             }
+
+
         }
     }
 }

@@ -1,11 +1,10 @@
 C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabularyInstaller\bin\Debug\CheckVocabularyInstaller.msi
 C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabularyInstaller\bin\Debug\CheckVocabularyInstaller.wixpdb
+C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabularyInstaller\bin\Debug\cab1.cab
+C:\Dev\MyProject\CheckVocabulary\CheckVocabularyInstaller\bin\Debug\CheckVocabularyInstaller.msi
+C:\Dev\MyProject\CheckVocabulary\CheckVocabularyInstaller\bin\Debug\CheckVocabularyInstaller.wixpdb
+obj\Debug\CsokaSetupDialogSet.wixobj
 obj\Debug\Product.wixobj
 obj\Debug\CheckVocabularyInstaller.wixproj.BindContentsFileListnull.txt
 obj\Debug\CheckVocabularyInstaller.wixproj.BindOutputsFileListnull.txt
 obj\Debug\CheckVocabularyInstaller.wixproj.BindBuiltOutputsFileListnull.txt
-C:\Users\lorand.csoka\Desktop\CheckVocabulary\CheckVocabularyInstaller\bin\Debug\cab1.cab
-obj\Debug\CsokaSetupDialogSet.wixobj
-C:\Dev\MyProject\CheckVocabulary\CheckVocabularyInstaller\bin\Debug\cab1.cab
-C:\Dev\MyProject\CheckVocabulary\CheckVocabularyInstaller\bin\Debug\CheckVocabularyInstaller.msi
-C:\Dev\MyProject\CheckVocabulary\CheckVocabularyInstaller\bin\Debug\CheckVocabularyInstaller.wixpdb
